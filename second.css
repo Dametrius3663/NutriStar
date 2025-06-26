@@ -69,6 +69,10 @@
 }
 
 
+.nav-links{
+    transition: 1s;
+}
+
 /* General styles */
 * {
     box-sizing: border-box;

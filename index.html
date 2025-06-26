@@ -21,26 +21,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Optional: favicon -->
-</head>
+
+
+  <script>
+      var navLinks = document.getElementById('navLinks');
+      function showMenu() {
+            navLinks.style.right = "0";
+      }
+      function hideMenu() {
+            navLinks.style.right = "-200px";
+      }
+    </script>
+  </head>
 
 <body id="top-of-page" class="bg-amber-100">
-    <div class="leaves-container">
-        <div class="leaves">
-            <i class="fa-brands fa-pagelines fa-rotate-by fa-2xl" style="--fa-rotate-angle: 135deg;"></i>
-        </div>
-        <div class="leaves">
-            <i class="fa-brands fa-pagelines fa-rotate-by fa-2xl" style="--fa-rotate-angle: 235deg;"></i>
-        </div>
-        <div class="leaves">
-            <i class="fa-brands fa-pagelines fa-rotate-by fa-2xl" style="--fa-rotate-angle: 135deg;"></i>
-        </div>
-        <div class="leaves">
-            <i class="fa-brands fa-pagelines fa-rotate-by fa-2xl" style="--fa-rotate-angle: 235deg;"></i>
-        </div>
-    </div>
-    </div>
-   <header>
-        
+   <header class="flex flex-row justify-between">
+      <div class="flex flex-col items-center">
         <a href="/">
             <h1> Emily Hall</h1>
         </a>
@@ -48,17 +44,7 @@
         <p> I use my knowledge of nutrition and exercise science 
             to better the lives of those in my community.
         </p>
-        <nav>
-            <a class="anchor-text " href="#about">
-                <h2>About</h2>
-            </a>
-            <a class="anchor-text" href="#services">
-                <h2>Services</h2>
-            </a>
-            <a class="anchor-text" href="#contact">
-                <h2>Contact</h2>
-            </a>
-        </nav>
+        
         <div class="w-fit mx-auto my-4 flex flex-row items-center gap-4">
             <a class="social-link" href="https://www.linkedin.com/in/emily-nunemaker" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
@@ -72,8 +58,23 @@
         </div>
         <div class="w-0.5 h-[100px] rouded-lg bg-linear-to-b from-yellow-800 to-transparent 
          mx-auto my-4 items-center"></div>
-        
+      </div>
+
+
+        <nav>
+          <div class=" nav-links absolute bg-amber-300/30 h-screen w-[200px] top-0 right-[-200px] z-2" id='navLinks'>
+            <i class="fa fa-xmark p-[8px] truncate" onclick="hideMenu()"></i>
+              <ul class="block items-start gap-8 mx-auto my-15 ">
+                <li class=" block text-left"><a class="anchor-text " href="#about"><h2>About</h2></a></li>
+                <li class=" block text-left"></li><a class="anchor-text" href="#services"><h2>Services</h2></a></li>
+                <li class=" block text-left"></li><a class="anchor-text" href="#contact"><h2>Contact</h2></a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars block text-brown-400/70 mx-10 my-10 text-22px cursor-pointer text-right" onclick="hideMenu()"></i>
+        </nav>
    </header>
+
+
     <main>
         <section id="about" class="sections">
             <div class="sticky-header">
@@ -184,6 +185,7 @@
     <footer>
 
     </footer>
+    
 </body>
 
 </html>
