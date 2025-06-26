@@ -23,7 +23,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Optional: favicon -->
 </head>
 
-<body id="top-of-page" class="bg-amber-200">
+<body id="top-of-page" class="bg-amber-100">
     <div class="leaves-container">
         <div class="leaves">
             <i class="fa-brands fa-pagelines fa-rotate-by fa-2xl" style="--fa-rotate-angle: 135deg;"></i>
@@ -133,15 +133,22 @@
          <div>   
             <!-- Formspree Contact Form -->
             <form action="https://formspree.io/f/mzzbggpl" method="POST" 
-            class="flex flex-col align-center my-15 ">
-                <input class="w-fit p-12 mx-auto my-0 border-1 border-solid-272727 rounded-2xl text-base"
+            class="flex flex-col align-center my-15 w-fit mx-auto ">
+                <input class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
+                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300"
                 type="text" name="name" placeholder="Enter your 'Name'" required>
-                <input class="w-fit p-12 mx-auto my-0 border-1 border-solid-272727 rounded-2xl text-base"
+                <input class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
+                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300"
                 type="phone" name="phone" placeholder="Enter your 'Phone Number'" required>
-                <input class="w-fit p-12 mx-auto my-0 border-1 border-solid-272727 rounded-2xl text-base"
+                <input class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
+                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300"
                 type="email" name="email" placeholder="Enter your 'Email'" required>
-                <textarea name="message" placeholder="What is your 'Inquery'" rows="4" required></textarea>
-                <button type="submit">Send</button>
+                <textarea class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
+                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300" 
+                name="message" placeholder="What is your 'Inquery'" rows="4" required></textarea>
+                <button class="w-fit p-[18px] mx-auto my-2 rounded-2xl
+                 text-base hover:p-[1rem] hover:bg-red-200/70 hover:duration-250 hover:shadow-lg hover:border-1"
+                 type="submit">Send</button>
             </form>
         </div>
         <script>
