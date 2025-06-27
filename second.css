@@ -69,14 +69,17 @@
 }
 
 
-.nav-links{
-    transition: 1s;
-}
-
 /* General styles */
 * {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+}
+
+.title {
+font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.5rem;
 }
 
 

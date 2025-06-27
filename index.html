@@ -19,60 +19,72 @@
 
     <!-- Link to Google Fonts for custom typography & LINK FOR ICON SET -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Optional: favicon -->
-
-
-  <script>
-      var navLinks = document.getElementById('navLinks');
-      function showMenu() {
-            navLinks.style.right = "0";
-      }
-      function hideMenu() {
-            navLinks.style.right = "-200px";
-      }
-    </script>
-  </head>
+</head>
 
 <body id="top-of-page" class="bg-amber-100">
-   <header class="flex flex-row justify-between">
-      <div class="flex flex-col items-center">
+   <header class="relative">
+    <!-- Hamburger Menu: Positioned Top-Right -->
+    <div class="absolute top-4 right-4 z-50">
+      <button id="menu-button" class="p-2 text-yellow-800 text-2xl">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Background Image with Gradient -->
+    <div class="relative w-full h-vh bg-cover bg-center z-0" style="background-image: url('/bg.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
+
+      <!-- Main Content Centered Vertically -->
+      <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 gap-4">
         <a href="/">
-            <h1> Emily Hall</h1>
+          <h1 class="title text-2xl">Emily Hall</h1>
         </a>
-        <h4> Holistic Nutrition Coach</h4>
-        <p> I use my knowledge of nutrition and exercise science 
-            to better the lives of those in my community.
+        <h4 class="title text-sm">Holistic Nutrition Coach</h4>
+        <p>
+          I use my knowledge of nutrition and exercise science
+          to better the lives of those in my community.
         </p>
-        
+
+        <!-- Social Links -->
         <div class="w-fit mx-auto my-4 flex flex-row items-center gap-4">
-            <a class="social-link" href="https://www.linkedin.com/in/emily-nunemaker" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a class="social-link" href="https://www.instagram.com/emily.leila.hall/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="social-link" href="https://www.facebook.com/emily.hall.753664" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
+          <a class="social-link" href="https://www.linkedin.com/in/emily-nunemaker" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/emily.leila.hall/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="social-link" href="https://www.facebook.com/emily.hall.753664" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </div>
-        <div class="w-0.5 h-[100px] rouded-lg bg-linear-to-b from-yellow-800 to-transparent 
-         mx-auto my-4 items-center"></div>
+
+        <!-- Decorative Divider -->
+        <div class="w-0.5 h-[75px] rounded-lg bg-gradient-to-b from-yellow-800 to-transparent mx-auto my-4"></div>
       </div>
+    </div>
 
-
-        <nav>
-          <div class=" nav-links absolute bg-amber-300/30 h-screen w-[200px] top-0 right-[-200px] z-2" id='navLinks'>
-            <i class="fa fa-xmark p-[8px] truncate" onclick="hideMenu()"></i>
-              <ul class="block items-start gap-8 mx-auto my-15 ">
-                <li class=" block text-left"><a class="anchor-text " href="#about"><h2>About</h2></a></li>
-                <li class=" block text-left"></li><a class="anchor-text" href="#services"><h2>Services</h2></a></li>
-                <li class=" block text-left"></li><a class="anchor-text" href="#contact"><h2>Contact</h2></a></li>
-              </ul>
-          </div>
-          <i class="fa fa-bars block text-brown-400/70 mx-10 my-10 text-22px cursor-pointer text-right" onclick="hideMenu()"></i>
-        </nav>
-   </header>
+    <!-- Mobile Menu (hidden by default) -->
+    <nav id="mobile-menu" class="fixed top-0 right-0 h-full w-60 bg-amber-700/80 shadow-md transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+      <div class="flex justify-start p-4">
+        <button id="close-button">
+          <i class="fa fa-xmark text-black text-2xl"></i>
+        </button>
+      </div>
+      <ul class="flex flex-col items-start px-6 gap-6">
+        <li><a class="hover:text-white hover:underline hover:decoration-white hover:duration-250 hover:ease-in" 
+            href="#about">About</a></li>
+        <li><a class="hover:text-white hover:underline hover:decoration-white hover:duration-250 hover:ease-in" 
+            href="#services">Services</a></li>
+        <li><a class="hover:text-white hover:underline hover:decoration-white hover:duration-250 hover:ease-in" 
+            href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
     <main>
@@ -185,7 +197,29 @@
     <footer>
 
     </footer>
-    
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.getElementById("mobile-menu");
+    const openBtn = document.getElementById("menu-button");
+    const closeBtn = document.getElementById("close-button");
+    const navLinks = menu.querySelectorAll("a");
+
+    openBtn.addEventListener("click", () => {
+      menu.classList.remove("translate-x-full");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.add("translate-x-full");
+    });
+
+    // Close menu when any nav link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.add("translate-x-full");
+      });
+    });
+  });
+</script>
 </body>
 
 </html>
