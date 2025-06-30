@@ -26,11 +26,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Optional: favicon -->
 </head>
 
-<body id="top-of-page" class="bg-amber-100">
+<body id="top-of-page" class="bg-amber-200">
    <header class="relative">
     <!-- Hamburger Menu: Positioned Top-Right -->
     <div class="absolute top-4 right-4 z-50">
-      <button id="menu-button" class="p-2 text-yellow-800 text-2xl">
+      <button id="menu-button" class="p-2 text-white text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150">
         <i class="fa fa-bars"></i>
       </button>
     </div>
@@ -51,28 +51,28 @@
         </p>
 
         <!-- Social Links -->
-        <div class="w-fit mx-auto my-4 flex flex-row items-center gap-4">
-          <a class="social-link" href="https://www.linkedin.com/in/emily-nunemaker" target="_blank">
+        <div class="w-fit mx-auto my-4 flex flex-row items-center gap-4 ">
+          <a class="hover:bg-amber-200/70 rounded-lg hover:duration-150 hover:px-1" href="https://www.linkedin.com/in/emily-nunemaker" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a class="social-link" href="https://www.instagram.com/emily.leila.hall/" target="_blank">
+          <a class="hover:bg-amber-200/70 rounded-lg hover:duration-300 hover:px-1" href="https://www.instagram.com/emily.leila.hall/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a class="social-link" href="https://www.facebook.com/emily.hall.753664" target="_blank">
+          <a class="hover:bg-amber-200/70 rounded-lg hover:duration-300 hover:px-1" href="https://www.facebook.com/emily.hall.753664" target="_blank">
             <i class="fa-brands fa-facebook"></i>
           </a>
         </div>
 
         <!-- Decorative Divider -->
-        <div class="w-0.5 h-[75px] rounded-lg bg-gradient-to-b from-yellow-800 to-transparent mx-auto my-4"></div>
+        <div class="w-0.5 h-[75px] rounded-lg bg-gradient-to-b from-yellow-800 to-transparent mx-auto"></div>
       </div>
     </div>
 
     <!-- Mobile Menu (hidden by default) -->
-    <nav id="mobile-menu" class="fixed top-0 right-0 h-full w-60 bg-amber-700/80 shadow-md transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+    <nav id="mobile-menu" class=" fixed top-0 right-0 h-full w-60 bg-amber-700/80 shadow-md transform translate-x-full transition-transform duration-300 z-50 md:hidden">
       <div class="flex justify-start p-4">
         <button id="close-button">
-          <i class="fa fa-xmark text-black text-2xl"></i>
+          <i class="fa fa-xmark text-black text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2"></i>
         </button>
       </div>
       <ul class="flex flex-col items-start px-6 gap-6">
@@ -86,17 +86,16 @@
     </nav>
   </header>
 
-
-    <main>
-        <section id="about" class="sections">
-            <div class="sticky-header">
-                <h2 class="lightText">About</h2>
+    <main class="inset-0 bg-gradient-to-b from-white to-amber-200 z-0">
+        <section id="about">
+            <div>
+                <h2 class="py-2 uppercase w-fit font-black text-2xl text-[#7e5514a1]">About</h2>
             </div>
             <div>
                 <p>Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
                     and do a lot more fun stuff.
                 </p>
-                <p class="about_p">Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
+                <p class="py-4">Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
                     and do a lot more fun stuff.
                 </p>
                 <p>Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
@@ -104,12 +103,12 @@
                 </p>
             </div>
         </section>
-        <section id="services" class="sections">
-            <div class="sticky-header">
-                <h2 class="lightText">Services</h2>
+        <section id="services">
+            <div >
+                <h2 class="py-2 uppercase w-fit font-black text-2xl text-[#7e5514a1]">Services</h2>
             </div>
-            <div class="experience-contents">
-                <div class="experience-card">
+            <div class="Services-contents">
+                <div class="Service-card">
                     <p class ="tenure">2024 - present</p>
                     <div class="card-column">
                         <a class="anchor-text" href="/" target="_blank">
@@ -138,9 +137,9 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="sections">
-            <div class="sticky-header">
-                <h2 class="lightText">Contact</h2>
+        <section id="contact">
+            <div>
+                <h2 class="py-2 uppercase w-fit font-black text-2xl text-[#7e5514a1]">Contact</h2>
             </div>
             <p>If you'd like to get in touch with me for coaching or inquiries, please fill out the form below:</p>
          <div>   
@@ -194,8 +193,8 @@
         </script>
         </section>
     </main>
-    <footer>
-
+    <footer class=" inset-0 flex flex-col bg-gradient-to-b from-amber-200 to-white z-0">
+      
     </footer>
     <script>
   document.addEventListener("DOMContentLoaded", () => {

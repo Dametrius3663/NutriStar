@@ -19,7 +19,7 @@
     /* blue-500 */
     --color-tertiary: #60a5fa;
     /* blue-400 */
-    --color-accent: #f6339a;
+   --accent-color: #7e5514a1;
     /* vibrant pink */
     --color-compliment: #7dd3fc;
     /* sky blue (used subtly) */
@@ -75,6 +75,18 @@
     font-family: "Inter", sans-serif;
 }
 
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    background-color: var(--accent-color);
+    color: #fff8e7;
+}
+ 
+
 .title {
 font-family: "Rouge Script", cursive;
     font-weight: 400;
@@ -82,90 +94,3 @@ font-family: "Rouge Script", cursive;
     font-size: 2.5rem;
 }
 
-
-
-
-/* Interactive elements */
-details {
-    border: 1px solid var(--border-primary);
-}
-
-summary {
-    font-weight: bold;
-}
-
-details[open] summary {
-    border-bottom: 1px solid var(--border-primary);
-    margin-bottom: 0.5rem;
-}
-
-.card,
-.card-button {
-    background-color: var(--background-secondary);
-    color: var(--color-primary);
-}
-
-.card {
-    /* border: 1px solid var(--color-link-transparent); */
-}
-
-.card-button {
-    /* border: 1px solid var(--border-secondary); */
-}
-
-.card-button {
-    box-shadow: none;
-}
-
-.card-button:hover {
-    transform: translate(0);
-    box-shadow: none;
-    border-color: var(--border-highlight);
-}
-
-.card-button-primary,
-.card-button-secondary {
-    border: none !important;
-    box-shadow: rgba(96, 165, 255, 0.35) 0px 14px 55px !important;
-}
-
-.card-button-primary:hover,
-.card-button-secondary:hover {
-    transform: none;
-}
-
-.card-button-primary {
-    color: var(--background-primary);
-    background: var(--color-link);
-}
-
-.card-button-secondary {
-    color: var(--color-link);
-    background: var(--background-primary);
-}
-
-
-.card-button-primary:hover::after,
-.card-button-secondary:hover::after {
-    transform: translateX(100%);
-}
-
-.card-button-primary,
-.card-button-secondary {
-    position: relative;
-    overflow: hidden;
-}
-
-.card-button-primary::after,
-.card-button-secondary::after {
-    position: absolute;
-    content: "";
-    opacity: 0.04;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    right: 100%;
-    transition-duration: 0.2s;
-    z-index: 0;
-    background: navy;
-}
