@@ -11,7 +11,6 @@
     <meta property="og:title" content="Emily's Nutrition Coaching">
     <meta property="og:description" content="Personalized nutrition coaching to help you achieve your health goals.">
     <meta property="og:image" content="URL_to_image.jpg"> <!-- Add an image URL -->
-    <meta property="og:url" content="https://www.nutrition4life.com">
 
     <title>Emily's Nutrition Coaching</title>
     <link rel="stylesheet" href="styles.css">
@@ -28,12 +27,6 @@
 
 <body id="top-of-page" class="bg-amber-200">
    <header class="relative">
-    <!-- Hamburger Menu: Positioned Top-Right -->
-    <div class="absolute top-4 right-4 z-50">
-      <button id="menu-button" class="p-2 text-white text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150">
-        <i class="fa fa-bars"></i>
-      </button>
-    </div>
 
     <!-- Background Image with Gradient -->
     <div class="relative w-full h-vh bg-cover bg-center z-0" style="background-image: url('/bg.jpg');">
@@ -68,19 +61,31 @@
       </div>
     </div>
 
+
+     <!-- Hamburger Menu: Positioned Top-Right -->
+    <div class="absolute top-4 right-4 z-50 md:hidden lg:hidden">
+      <button id="menu-button" class="p-2 text-white text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
     <!-- Mobile Menu (hidden by default) -->
-    <nav id="mobile-menu" class=" fixed top-0 right-0 h-full w-60 bg-amber-700/80 shadow-md transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+    <nav id="mobile-menu" class="md:hidden lg:hiddens fixed top-0 right-0 h-full w-60 bg-amber-700/80 shadow-md transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+      <div class="absolute top-4 right-4 z-50">
+      <button id="menu-button" class="p-2 text-white text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
       <div class="flex justify-start p-4">
         <button id="close-button">
           <i class="fa fa-xmark text-black text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2"></i>
         </button>
       </div>
       <ul class="flex flex-col items-start px-6 gap-6">
-        <li><a class="hover:text-white hover:underline hover:decoration-white hover:duration-250 hover:ease-in" 
+        <li><a class="hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2" 
             href="#about">About</a></li>
-        <li><a class="hover:text-white hover:underline hover:decoration-white hover:duration-250 hover:ease-in" 
+        <li><a class="hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2" 
             href="#services">Services</a></li>
-        <li><a class="hover:text-white hover:underline hover:decoration-white hover:duration-250 hover:ease-in" 
+        <li><a class="hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2" 
             href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -107,15 +112,13 @@
             <div >
                 <h2 class="py-2 uppercase w-fit font-black text-2xl text-[#7e5514a1]">Services</h2>
             </div>
-            <div class="Services-contents">
-                <div class="Service-card">
-                    <p class ="tenure">2024 - present</p>
-                    <div class="card-column">
-                        <a class="anchor-text" href="/" target="_blank">
-                            <h3 class ="card-header">Nutrition Coach for Pregnancy 
-                                <i class="fa-solid fa-arrow-right anchor-icon"></i>
-                            </h3>
-                        </a>
+            <div class="flex flex-col gap-4 text-[0.9rem]">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[0.5rem]">
+                    <p class ="opacity-[0.7] uppercase text-[0.8rem]">2024 - present</p>
+                    <div class="flex flex-col gap-[0.75rem]">
+                        <h3 class ="font-normal text-[1rem]">Nutrition Coach for Pregnancy 
+                                <i class="fa-solid fa-arrow-right ps-[0.5rem] hover:ps-3 duration-150"></i>
+                        </h3>
                         <p>In this role I made meal plans, led weekly check-ups to monitor progress and the goals of my clients,
                             and provided multiple educational resources.
                         </p>
