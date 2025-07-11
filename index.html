@@ -26,10 +26,10 @@
 </head>
 
 <body id="top-of-page" class="bg-amber-200">
-   <header class="relative">
+   <header class="relative mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-amber-200 to-white">
 
     <!-- Background Image with Gradient -->
-    <div class="relative w-[1000px] h-vh bg-cover bg-center z-0" style="background-image: url('public/images/bg.jpg');">
+    <div class="relative w-fit h-[450px] bg-cover bg-center z-0 md:rounded-[6rem]" style="background-image: url('public/images/bg.jpg');">
       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
 
       <!-- Main Content Centered Vertically -->
@@ -90,112 +90,39 @@
       </ul>
     </nav>
   </header>
-
-    <main class="inset-0 bg-gradient-to-b from-white to-amber-200 z-0">
-        <section id="about">
-            <div>
-                <h2 class="py-2 uppercase w-fit font-black text-2xl text-[#7e5514a1]">About</h2>
-            </div>
-            <div>
-                <p>Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
-                    and do a lot more fun stuff.
-                </p>
-                <p class="py-4">Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
-                    and do a lot more fun stuff.
-                </p>
-                <p>Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
-                    and do a lot more fun stuff.
-                </p>
-            </div>
-        </section>
-        <section id="services">
-            <div >
-                <h2 class="py-2 uppercase w-fit font-black text-2xl text-[#7e5514a1]">Services</h2>
-            </div>
-            <div class="flex flex-col gap-4 text-[0.9rem]">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[0.5rem]">
-                    <p class ="opacity-[0.7] uppercase text-[0.8rem]">2024 - present</p>
-                    <div class="flex flex-col gap-[0.75rem]">
-                        <h3 class ="font-normal text-[1rem]">Nutrition Coach for Pregnancy 
-                                <i class="fa-solid fa-arrow-right ps-[0.5rem] hover:ps-3 duration-150"></i>
-                        </h3>
-                        <p>In this role I made meal plans, led weekly check-ups to monitor progress and the goals of my clients,
-                            and provided multiple educational resources.
-                        </p>
-                        <div class="tag-container">
-                            <div class="tag">
-                                <p>Nutrition</p>
-                            </div>
-                            <div class="tag">
-                                <p>Communication</p>
-                            </div>
-                            <div class="tag">
-                                <p>Coaching</p>
-                            </div>
-                            <div class="tag">
-                                <p>Exercise Science</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div>
-                <h2 class="py-2 uppercase w-fit font-black text-2xl text-[#7e5514a1]">Contact</h2>
-            </div>
-            <p>If you'd like to get in touch with me for coaching or inquiries, please fill out the form below:</p>
-         <div>   
-            <!-- Formspree Contact Form -->
-            <form action="https://formspree.io/f/mzzbggpl" method="POST" 
-            class="flex flex-col align-center my-15 w-fit mx-auto ">
-                <input class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
-                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300"
-                type="text" name="name" placeholder="Enter your 'Name'" required>
-                <input class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
-                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300"
-                type="phone" name="phone" placeholder="Enter your 'Phone Number'" required>
-                <input class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
-                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300"
-                type="email" name="email" placeholder="Enter your 'Email'" required>
-                <textarea class="w-fit p-[12px] mx-auto my-2 border-1 border-solid-272727 rounded-2xl
-                 text-base hover:p-[1rem] hover:bg-amber-200/70 hover:duration-300" 
-                name="message" placeholder="What is your 'Inquery'" rows="4" required></textarea>
-                <button class="w-fit p-[18px] mx-auto my-2 rounded-2xl
-                 text-base hover:p-[1rem] hover:bg-red-200/70 hover:duration-250 hover:shadow-lg hover:border-1"
-                 type="submit">Send</button>
-            </form>
+  <main class="inset-0 bg-gradient-to-b from-white to-amber-200 z-0">
+      <section id="about">
+          <div class="flex justify-center ">
+              <h2 class="border-2 py-4 px-6 flex  uppercase w-fit font-black text-6xl font-medium text-[#7e5514a1]">About</h2>
+          </div>
+          <div>
+              <p>Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
+                  and do a lot more fun stuff.
+              </p>
+              <p class="py-4">Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
+                  and do a lot more fun stuff.
+              </p>
+              <p>Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
+                  and do a lot more fun stuff.
+              </p>
+          </div>
+      </section>
+      <section class="flex flex-col justify-center gap-1 items-center md:flex-row ">
+        <div class="hover:p-[1rem] hover:duration-190">
+            <a href="blogs.html" class="flex flex-col w-[400px] h-[300px] border-1 rounded-lg bg-gradient-to-b from-slate-400 to-sky-100 gap-6">
+              <div class="flex flex-row items-start justify-center items-center px-32 py-24 rounded-4xl bg-cover bg-center bg-[url(public/images/bg.jpg)]">
+                <h2 class="flex flex-row mx-0">Blogs</h2>
+              </div>
+            </a>
         </div>
-        <script>
-            const form = document.querySelector('.contact-form');
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault(); // Prevent default form submission
-                
-                const formData = new FormData(form);
-        
-                fetch(form.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json' // Important header for Formspree
-                    }
-                })
-                .then(response => {
-                    if (response.ok) {
-                        alert("Thank you for reaching out! Your message has been sent.");
-                        form.reset(); // Reset the form
-                    } else {
-                        alert("Oops! There was a problem submitting your message.");
-                    }
-                })
-                .catch(error => {
-                    alert("An error occurred. Please try again.");
-                });
-            });
-        </script>
-        </section>
-    </main>
+        <div class="hover:p-[1rem] hover:duration-190">
+            <a href="ctc.html" class="flex justify-center w-[400px] h-[300px] border-1 rounded-lg bg-gradient-to-b from-green-100 to-green-800/60">
+              <h2>Contact/Book</h2>
+            </a>
+        </div>
+
+      </section>
+  </main>
     <footer class=" inset-0 flex flex-col bg-gradient-to-b from-amber-200 to-white z-0">
       
     </footer>
