@@ -19,15 +19,37 @@
     <!-- Link to Google Fonts for custom typography & LINK FOR ICON SET -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Optional: favicon -->
 </head>
 
 <body id="top-of-page" class="bg-amber-200">
-   <header class="relative mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-amber-200 to-white">
-
+   <header class="mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-amber-200 to-white">
+    <!--Nav bar-->
+    <nav class="flex bg-green-400/30 h-[60px] w-full fixed top-0 z-50 backdrop-blur-md">
+      <div class="flex flex-row items-center justify-between w-full px-4">
+         <!-- Desktop Nav -->
+<div class="hidden md:gap-4 md:flex md:block">
+          <a class="text-l px-2 py-1 hover:duration-250 hover:bg-amber-200 hover:rounded-full hover:p-2 hover:cursor-pointer" href="/">Home</a>
+          <a class="text-l px-2 py-1 hover:duration-250 hover:bg-amber-200 hover:rounded-full hover:p-2 hover:cursor-pointer" href="/">Blogs</a>
+          <a class="text-l px-2 py-1 hover:duration-250 hover:bg-amber-200 hover:rounded-full hover:p-2 hover:cursor-pointer" href="/">Contact</a>
+        </div>
+         <!-- Book Now -->
+        <button class="bg-amber-200 rounded-2xl w-fit px-4 py-2 hover:opacity-70 transition-opacity duration-300 backdrop-blur-md" id="menu-button"> <a class="">Book Now</a></button>
+        <div class="sm:text-xl md:hidden">
+          <button id="hamburger-button" class="text-xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+        <!-- Mobile menu: hidden by default on desktop -->
+      <div id="mobile-menu" class="flex-col items-start bg-green-400/30 w-full px-4 py-2 gap-2 absolute top-[60px] left-0 z-40 transform transition-transform duration-300 translate-x-full md:hidden">
+        <a href="/" class="block px-2 py-2 hover:bg-amber-100/70 rounded">Home</a>
+        <a href="/" class="block px-2 py-2 hover:bg-amber-100/70 rounded">Blogs</a>
+        <a href="/" class="block px-2 py-2 hover:bg-amber-100/70 rounded">Contact</a>
+      </div>
+    </nav>
+    <!--End of nav bar-->
     <!-- Background Image with Gradient -->
     <div class="relative w-fit h-[450px] bg-cover bg-center z-0 md:rounded-[6rem]" style="background-image: url('public/images/bg.jpg');">
       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
@@ -35,14 +57,12 @@
       <!-- Main Content Centered Vertically -->
       <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 gap-4">
         <a href="/">
-          <h1 class="title text-2xl">Emily Hall</h1>
+          <h1 class="title text-2xl pt-15 sm:pt-5">Emily Hall</h1>
         </a>
         <h4 class="title text-sm">Holistic Nutrition Coach</h4>
-        <p>
-          I use my knowledge of nutrition and exercise science
+        <p>I use my knowledge of nutrition and exercise science
           to better the lives of those in my community.
         </p>
-
         <!-- Social Links -->
         <div class="w-fit mx-auto my-4 flex flex-row items-center gap-4 ">
           <a class="hover:bg-amber-200/70 rounded-lg hover:duration-150 hover:px-1" href="https://www.linkedin.com/in/emily-nunemaker" target="_blank">
@@ -55,46 +75,14 @@
             <i class="fa-brands fa-facebook"></i>
           </a>
         </div>
-
-        <!-- Decorative Divider -->
-        <div class="w-0.5 h-[75px] rounded-lg bg-gradient-to-b from-yellow-800 to-transparent mx-auto"></div>
+        
       </div>
     </div>
-
-
-     <!-- Hamburger Menu: Positioned Top-Right -->
-    <div class="absolute top-4 right-4 z-50 md:hidden lg:hidden">
-      <button id="menu-button" class="p-2 text-white text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150">
-        <i class="fa fa-bars"></i>
-      </button>
-    </div>
-    <!-- Mobile Menu (hidden by default) -->
-    <nav id="mobile-menu" class="md:hidden lg:hiddens fixed top-0 right-0 h-full w-60 bg-amber-700/80 shadow-md transform translate-x-full transition-transform duration-300 z-50">
-      <div class="absolute top-4 right-4 z-50">
-      <button id="menu-button" class="p-2 text-white text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150">
-        <i class="fa fa-bars"></i>
-      </button>
-    </div>
-      <div class="flex justify-start p-4">
-        <button id="close-button">
-          <i class="fa fa-xmark text-black text-2xl hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2"></i>
-        </button>
-      </div>
-      <ul class="flex flex-col items-start px-6 gap-6">
-        <li><a class="hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2" 
-            href="/">Home</a></li>
-        <li><a class="hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2" 
-            href="blogs.html">Blogs</a></li>
-        <li><a class="hover:bg-amber-200/70 rounded-2xl hover:duration-150 hover:p-2" 
-            href="ctc.html">/=Contact/Book</a></li>
-      </ul>
-    </nav>
   </header>
   <main class="inset-0 bg-gradient-to-b from-white to-amber-200 z-0">
-      <section id="about">
-          <div class="flex justify-center ">
-              <h2 class="border-2 py-4 px-6 flex  uppercase w-fit font-black text-6xl font-medium text-[#7e5514a1]">About</h2>
-          </div>
+      <!-- Decorative Divider -->
+        <div class="rounded-lg bg-gradient-to-b from-yellow-800 to-transparent mx-auto w-0.5 h-[100px] sm:h-[125px] md:h-[150px] md:h-[175px]"></div>
+        <section id="about">
           <div>
               <p>Hello my name is dametrius and I really like <a target = "_blank" class = anchor-text href = "https://bambulab.com/en-us">programming</a> and going to the gym. It is sunny which I also enjoy. That means I can paddle board
                   and do a lot more fun stuff.
@@ -107,17 +95,19 @@
               </p>
           </div>
       </section>
-      <section class="flex flex-col justify-center gap-1 items-center md:flex-row ">
-        <div class="hover:p-[1rem] hover:duration-190">
-            <a href="blogs.html" class="flex flex-col w-[400px] h-[300px] border-1 rounded-lg bg-gradient-to-b from-slate-400 to-sky-100 gap-6">
-              <div class="flex flex-row items-start justify-center items-center px-32 py-24 rounded-4xl bg-cover bg-center bg-[url(public/images/bg.jpg)]">
+      <section class="flex flex-col justify-center gap-4 items-center md:flex-row ">
+        <div class="pt-5">
+            <a href="blogs.html" class="flex flex-col border-1 rounded-lg bg-gradient-to-b from-slate-400 to-sky-100 gap-6">
+              <div class="flex flex-row items-start justify-center items-center px-32 py-24 rounded-4xl bg-cover bg-center w-[100px] sm:w-[200px] sm:h-[150px] md:w-[266px] md:h-[200px] lg:w-[400px] lg:h-[300px]">
                 <h2 class="flex flex-row mx-0">Blogs</h2>
               </div>
             </a>
         </div>
-        <div class="hover:p-[1rem] hover:duration-190">
-            <a href="ctc.html" class="flex justify-center w-[400px] h-[300px] border-1 rounded-lg bg-gradient-to-b from-green-100 to-green-800/60">
-              <h2>Contact/Book</h2>
+        <div class="">
+            <a href="ctc.html" class="flex flex-col border-1 rounded-lg bg-gradient-to-b bg-gradient-to-b from-green-100 to-green-800/60 gap-6">
+              <div class="flex flex-row items-start justify-center items-center px-32 py-24 rounded-4xl bg-cover bg-center w-[100px] sm:w-[200px] sm:h-[150px] md:w-[266px] md:h-[200px] lg:w-[400px] lg:h-[300px]">
+                <h2 class="flex flex-row mx-0">Contact/Book</h2>
+              </div>
             </a>
         </div>
 
@@ -129,26 +119,21 @@
     <script>
   document.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("mobile-menu");
-    const openBtn = document.getElementById("menu-button");
-    const closeBtn = document.getElementById("close-button");
-    const navLinks = menu.querySelectorAll("a");
+    const hamburger = document.getElementById("hamburger-button");
 
-    openBtn.addEventListener("click", () => {
-      menu.classList.remove("translate-x-full");
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("translate-x-full");
     });
 
-    closeBtn.addEventListener("click", () => {
-      menu.classList.add("translate-x-full");
-    });
-
-    // Close menu when any nav link is clicked
-    navLinks.forEach(link => {
+    // Optional: auto-close mobile menu on nav link click
+    menu.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         menu.classList.add("translate-x-full");
       });
     });
   });
 </script>
+
 </body>
 
 </html>
