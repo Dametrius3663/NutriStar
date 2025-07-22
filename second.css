@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Indie+Flower&display=swap');
 
 :root {
+    /* Background Colors */
     --background-primary: #ffffff;
     --background-secondary: #f1f5ff;
     /* very light indigo */
@@ -13,7 +14,10 @@
     --background-gradient: linear-gradient(135deg, #eef2ff, #fdf4ff);
     --background-muted: #92cafe14;
 
-    --color-primary: #0f172a;
+    /* Nav Colors */
+    --color-nav: #05df72;
+
+    --color-primary: #fee685;
     /* dark slate (text) */
     --color-secondary: #3b82f6;
     /* blue-500 */
@@ -91,7 +95,10 @@ h6::selection {
     color: #fff8e7;
 }
  
-
+#mobile-menu{
+    color: var(--color-nav);
+    opacity: 30%;
+}
 .title {
 font-family: "Rouge Script", cursive;
     font-weight: 400;
