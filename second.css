@@ -73,6 +73,11 @@
 * {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 p::selection,
