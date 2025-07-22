@@ -13,8 +13,8 @@
     <meta property="og:image" content="URL_to_image.jpg"> <!-- Add an image URL -->
 
     <title>Emily's Nutrition Coaching</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="../../second.css">
+    <link rel="stylesheet" href="../../styles.css">
 
     <!-- Link to Google Fonts for custom typography & LINK FOR ICON SET -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -25,7 +25,31 @@
 
 <body id="top-of-page" class="bg-amber-200">
    <header class="relative">
-    
+    <!--Nav bar-->
+    <nav class="flex bg-green-400/30 h-[60px] w-full fixed top-0 z-50 backdrop-blur-md">
+      <div class="flex flex-row items-center justify-between w-full px-4">
+         <!-- Desktop Nav -->
+<div class="hidden md:gap-4 md:flex md:block">
+          <a class="text-l px-2 py-1 hover:duration-250 hover:bg-amber-200 hover:rounded-full hover:p-2 hover:cursor-pointer" href="/">Home</a>
+          <a class="text-l px-2 py-1 hover:duration-250 hover:bg-amber-200 hover:rounded-full hover:p-2 hover:cursor-pointer" href="/public/pages/blogs.html">Blogs</a>
+          <a class="text-l px-2 py-1 hover:duration-250 hover:bg-amber-200 hover:rounded-full hover:p-2 hover:cursor-pointer" href="/public/pages/ctc.html">Contact</a>
+        </div>
+         <!-- Book Now -->
+        <button class="bg-amber-200 rounded-2xl w-fit px-4 py-2 hover:opacity-70 transition-opacity duration-300 backdrop-blur-md" id="menu-button"> <a class="">Book Now</a></button>
+        <div class="sm:text-xl md:hidden">
+          <button id="hamburger-button" class="text-xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+        <!-- Mobile menu: hidden by default on desktop -->
+      <div id="mobile-menu" class="flex-col items-start bg-green-400/30 w-full px-4 py-2 gap-2 absolute top-[60px] left-0 z-40 transform transition-transform duration-300 translate-x-full md:hidden">
+        <a href="/" class="block px-2 py-2 hover:bg-amber-100/70 rounded">Home</a>
+        <a href="/" class="block px-2 py-2 hover:bg-amber-100/70 rounded">Blogs</a>
+        <a href="/" class="block px-2 py-2 hover:bg-amber-100/70 rounded">Contact</a>
+      </div>
+    </nav>
+    <!--End of nav bar-->
     <!-- Background Image with Gradient -->
     <div class="relative w-full h-vh bg-cover bg-center z-0" style="background-image: url('/bg.jpg');">
       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
