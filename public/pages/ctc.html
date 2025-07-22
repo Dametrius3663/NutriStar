@@ -202,20 +202,14 @@
     <script>
   document.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("mobile-menu");
-    const openBtn = document.getElementById("menu-button");
-    const closeBtn = document.getElementById("close-button");
-    const navLinks = menu.querySelectorAll("a");
+    const hamburger = document.getElementById("hamburger-button");
 
-    openBtn.addEventListener("click", () => {
-      menu.classList.remove("translate-x-full");
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("translate-x-full");
     });
 
-    closeBtn.addEventListener("click", () => {
-      menu.classList.add("translate-x-full");
-    });
-
-    // Close menu when any nav link is clicked
-    navLinks.forEach(link => {
+    // Optional: auto-close mobile menu on nav link click
+    menu.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         menu.classList.add("translate-x-full");
       });

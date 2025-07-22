@@ -95,10 +95,7 @@ h6::selection {
     color: #fff8e7;
 }
  
-#mobile-menu{
-    color: var(--color-nav);
-    opacity: 30%;
-}
+
 .title {
 font-family: "Rouge Script", cursive;
     font-weight: 400;
