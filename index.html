@@ -53,7 +53,6 @@
     <!-- Background Image with Gradient -->
     <div class="relative w-fit h-[450px] bg-cover bg-center z-0 md:rounded-[6rem]" style="background-image: url('public/images/bg.jpg');">
       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
-
       <!-- Main Content Centered Vertically -->
       <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 gap-4">
         <a href="/">
@@ -75,7 +74,6 @@
             <i class="fa-brands fa-facebook"></i>
           </a>
         </div>
-        
       </div>
     </div>
   </header>
@@ -101,11 +99,9 @@
           <h2 class=" bg-yellow-800/20 p-2 rounded-2xl w-fit flex  text-center text-[21px]">What to Expect from My Page</h2>
         </div>
         <div class="pt-5 flex flex-col items-center w-full max-w-[1000px] justify-between gap-4 sm:gap-0 sm:flex-row ">
-         
           <div class="flex items-center justify-center w-18 h-18 bg-gradient-to-b from-slate-400 to-sky-100 rounded-t-full border-2 border-emerald-800/70">
             <span class="text-xl text-gray-800">1</span>
           </div>
-
           <a href="blogs.html" class="flex flex-col border-1 rounded-lg bg-gradient-to-b from-slate-400 to-sky-100 gap-6">
             <div class="flex flex-row justify-center items-center px-32 py-24 rounded-4xl bg-cover bg-center w-[100px] sm:w-[200px] sm:h-[150px] md:w-[266px] md:h-[200px] lg:w-[400px] lg:h-[300px]">
               <h2 class="flex flex-row mx-0">Blogs</h2>
@@ -115,7 +111,6 @@
           <!-- Decorative Line -->
           <div class="rounded-lg bg-gradient-to-b from-emerald-800 to-transparent mx-auto h-0.5 w-[1000px]"></div>
           <!-- Decorative Line End -->
-        
         <div class="pt-5 flex flex-col sm:flex-row items-center w-full max-w-[1000px] justify-between">
           <a href="ctc.html" class="flex flex-col border-1 rounded-lg bg-gradient-to-b bg-gradient-to-b from-green-100 to-green-800/60 gap-6">
             <div class="flex flex-row justify-center items-center px-32 py-24 rounded-4xl bg-cover bg-center w-[100px] sm:w-[200px] sm:h-[150px] md:w-[266px] md:h-[200px] lg:w-[400px] lg:h-[300px]">
@@ -131,21 +126,17 @@
         <!-- Decorative Line -->
           <div class="rounded-lg bg-gradient-to-b from-emerald-800 to-transparent mx-auto h-0.5 w-[1000px]"></div>
           <!-- Decorative Line End -->
-
       </section>
   </main>
     <footer class=" inset-0 flex flex-col bg-gradient-to-b from-amber-200 to-white z-0">
-      
     </footer>
     <script>
   document.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("mobile-menu");
     const hamburger = document.getElementById("hamburger-button");
-
     hamburger.addEventListener("click", () => {
       menu.classList.toggle("translate-x-full");
     });
-
     // Optional: auto-close mobile menu on nav link click
     menu.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
@@ -154,7 +145,5 @@
     });
   });
 </script>
-
 </body>
-
 </html>
